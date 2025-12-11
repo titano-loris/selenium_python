@@ -1,0 +1,14 @@
+fenetre_cookies: 
+      close: //*[@id="onetrust-reject-all-handler"][text()='Tout refuser']
+actions:
+      champ_recherche: //*[@id="__next"]/div/div/main/div[2]/div/div[1]/div/div/div[2]/div/div[1]/form/div/input[1]
+      select_1: //a[.//p[text()='Darty'] and .//p[text()='www.darty.com']]
+      title: //*[@id="business-unit-title"]/h1/span[1][text()="Darty"]
+      tout_les_avis: //*[@id="__next"]/div/div/main/div/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/button
+      page_suivante: //*[@id="__next"]/div/div/main/div/div[2]/div[2]/div[3]/div/div/div[2]/section[2]/div[2]/nav/a[6]
+client:
+  fiche_xpath: "//div[contains(@class,'styles_cardWrapper')]//article[@data-service-review-card-paper='true']"
+  nom_xpath: ".//aside//a/span[contains(@class,'CDS_Typography_appearance-default')]"
+  note_xpath: ".//img[contains(@src,'stars')]"
+  comment_xpath: ".//section//div[contains(@class,'styles_reviewContent__')]"
+  date_xpath: //div[contains(@class,'styles_cardWrapper')]//article[@data-service-review-card-paper='true']//div[contains(@data-testid,"review-badge-date")]//span[contains(@class,"CDS_Typography_appearance-inherit")]
